@@ -1,0 +1,15 @@
+Hi,
+
+I'm Giridhar.
+
+I've been serving as an SDET right from the beginning of my career. I dealt with projects in many domains ranging from Automotive to Medical. Across these industries my major contribution was to Test, automate, fix and improve processes. I sincerely believe that quality is not just QA's responsibility but also everyone's responsibility.
+
+I've spent most of my time learning and upskilling myself and i am proud to say that i am currently in a position to take up challenges when it comes to automation.
+
+I sincerely feel that automation shouldn't be just limited to automating tests but it should be used beyond QA.
+
+My recent contributions for a client of mine at Ernst & Young was to automate 400 test cases which the org had failed after spending years maintaining legacy test automation stack (Java-Selenium). Analysing delivery times, maintenance frequency and fault rates of the product i rewrote the entire suite from legacy java stack to Playwright Based Robot framework stack. My experience in this stack is huge and most of my time in orgs was spent to either maintain or to offer quick, robust and fault tolerant automation solutions. The project was done within 2 months with 0% error rate and 100% management transparency when it comes to QA reporting.
+
+My skills are beyond just QA and i always view anything from a Business POV first and then from an Engineering POV next.
+
+I would also like to inform you that I've started to upskill myself in Ai-Agentic automation frameworks and implementing the same in existing projects in my recent corporate assignment. The results are truly amazing and i foresee my future in Automation/QA domain.

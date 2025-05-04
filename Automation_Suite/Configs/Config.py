@@ -1,0 +1,7 @@
+class Config:
+    BASE_URL = "http://127.0.0.1:8000"
+    API_ENDPOINT = "http://127.0.0.1:8000/test-process"
+    DEFAULT_TIMEOUT = 10
+    TEST_STRING = "ABCDFFFFQWERTYUIOPDDDDDDDD"
+    EXPECTED_LENGTH = 12
+    EXPECTED_SUBSTRING = "fqwertyuiopd"

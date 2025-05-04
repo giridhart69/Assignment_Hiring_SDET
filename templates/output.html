@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Output</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #e9ecef;
+            margin: 0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #28a745;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Result</h1>
+        {% if length is not none and substring %}
+        <p>Length of the longest substring without repeating characters: <strong>{{ length }}</strong></p>
+        <p>Longest substring: <strong>{{ substring }}</strong></p>
+        {% else %}
+        <p>No input processed yet.</p>
+        {% endif %}
+        <button onclick="goBack()">Go Back</button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.location.href = "/";
+        }
+
+        // Prevent forward navigation after going back
+        history.pushState(null, null, '/'); // Replace current history entry with the input page URL
+
+        window.addEventListener('popstate', function(event) {
+            // If the user navigates back to the output page, immediately go back again
+            if (location.pathname === '/output') {
+                history.go(-1);
+            }
+        });
+    </script>
+</body>
+</html>
